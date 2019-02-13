@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="BinHao Guo的个人博客">
 <meta property="og:description" content="合理了解Java hospot vm options 有利于定位线上问题,充分利用服务器计算资源,提升系统响应速度,亦能在开发阶段,根据数据实际大小,合理使用数据结构,酌情释放引用,减少线上OutOfMemory异常.本文针对Windows平台下的hospot参数进行初步整理记录,以做参考.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-12T00:46:28.605Z">
+<meta property="og:updated_time" content="2019-02-13T01:16:50.197Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JVM参数">
 <meta name="twitter:description" content="合理了解Java hospot vm options 有利于定位线上问题,充分利用服务器计算资源,提升系统响应速度,亦能在开发阶段,根据数据实际大小,合理使用数据结构,酌情释放引用,减少线上OutOfMemory异常.本文针对Windows平台下的hospot参数进行初步整理记录,以做参考.">
@@ -322,8 +322,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Jvm/" itemprop="url" rel="index">
-                    <span itemprop="name">Jvm</span>
+                  <a href="/categories/jvm/" itemprop="url" rel="index">
+                    <span itemprop="name">jvm</span>
                   </a>
                 </span>
 
@@ -448,7 +448,7 @@ jvm的所有实现都保证标准选项得到支持,他们用以常见的操作,
 
 布尔值选项用于启用默认禁用的功能，或禁用默认启用的功能。这些选项不需要参数。选项是使用加号（-XX:+OptionName）启用的，并使用减号（-XX:-OptionName）禁用。
 
-对于需要参数的选项，参数可以通过空格，冒号（:)或等号（=）与选项名称分隔，或者参数可以直接跟随选项（每个选项的确切语法不同） ）。如果你想指定字节大小，你可以使用任何后缀，或者使用后缀k或K千字节（KB），m或M兆字节（MB）g或G千兆字节（GB）。例如，设置大小为8 GB，您可以指定8g，8192m，8388608k，或8589934592作为参数。如果要指定百分比，请使用0到1之间的数字（例如，指定0.2525％）。
+对于需要参数的选项，参数可以通过空格，冒号（:)或等号（=）与选项名称分隔，或者参数可以直接跟随选项（每个选项的确切语法不同） ）。如果你想指定字节大小，可以使用后缀k或K千字节（KB），m或M兆字节（MB）g或G千兆字节（GB）中的任何一个。例如，设置大小为8 GB，您可以指定8g，8192m，8388608k，或8589934592作为参数。如果要指定百分比，请使用0到1之间的数字（例如，指定0.2525％）。
 </code></pre><h6 id="一丶标准选项"><a href="#一丶标准选项" class="headerlink" title="一丶标准选项"></a>一丶标准选项</h6><pre><code>这些是所有JVM实现所支持的最常用的选项。
 1.-agentlib:libname[=options]
     加载指定的本机代理库。在库名之后，可以使用一个逗号分隔的库选项列表（该库特有的选项列表）。
@@ -1357,6 +1357,10 @@ jvm的所有实现都保证标准选项得到支持,他们用以常见的操作,
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/02/13/jvm规范简述/" rel="prev" title="jvm规范简述">
+                jvm规范简述 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -1432,7 +1436,7 @@ jvm的所有实现都保证标准选项得到支持,他们用以常见的操作,
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
